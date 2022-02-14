@@ -7,7 +7,9 @@ pluginManagement {
         google()
         maven("https://jitpack.io")
         maven("https://maven.fabricmc.net")
-        gradlePluginPortal()
+        flatDir {
+            dirs=setOf(file("../../libs"))
+        }
     }
     resolutionStrategy {
         eachPlugin{
@@ -29,6 +31,6 @@ listOf(
     include(":$version")
     project(":$version").apply {
         projectDir = file("version/$version")
-        buildFileName = "../../build.gradle.kts"
+        buildFileName = "../../build.gradle"
     }
 }

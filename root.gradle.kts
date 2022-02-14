@@ -1,7 +1,11 @@
 plugins {
     kotlin("jvm") version Dependencies.KOTLIN apply false
+    kotlin("plugin.serialization") version Dependencies.KOTLIN apply false
+    kotlin("multiplatform") version Dependencies.KOTLIN apply false
+
+    // The Minecraft stuff
     id("fabric-loom") version Dependencies.FABRIC_LOOM apply false
-    id("preprocess") version Dependencies.PREPROCESSOR
+    id("preprocessor") version Dependencies.PREPROCESSOR
 }
 
 configurations.register("compileClasspath")

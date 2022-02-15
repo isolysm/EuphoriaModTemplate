@@ -1,6 +1,7 @@
 object Dependencies {
     // Required that we update this to match that of the current fabric version and game version
     const val JVM_TARGET = "17"
+    // Update this to whatever the hell you want because I don't care. As long as it matches with Kotlin, it is fine.
     const val KOTLIN = "1.6.10"
 
     // Other dependencies
